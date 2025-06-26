@@ -1,0 +1,1 @@
+import{bS as a,w as e,aG as t,I as r}from"./chunks/framework.CqaskQ-N.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"前端/实验室/index.md","filePath":"前端/实验室/index.md"}'),h={name:"前端/实验室/index.md"},o=r("",8),l=[o];function i(s,d,c,n,x,_){return t(),e("div",null,l)}const u=a(h,[["render",i]]);export{f as __pageData,u as default};

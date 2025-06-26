@@ -1,0 +1,1 @@
+import{bS as e,w as a,aG as t,I as r}from"./chunks/framework.CqaskQ-N.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"杂记/插件/插件.md","filePath":"杂记/插件/插件.md"}'),s={name:"杂记/插件/插件.md"},o=r("",3),_=[o];function i(c,n,l,h,d,p){return t(),a("div",null,_)}const u=e(s,[["render",i]]);export{f as __pageData,u as default};

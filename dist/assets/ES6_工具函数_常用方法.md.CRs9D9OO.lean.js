@@ -1,0 +1,1 @@
+import{bS as s,w as i,aG as a,I as h}from"./chunks/framework.CqaskQ-N.js";const F=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ES6/工具函数/常用方法.md","filePath":"ES6/工具函数/常用方法.md"}'),n={name:"ES6/工具函数/常用方法.md"},k=h("",24),l=[k];function t(p,e,E,r,d,g){return a(),i("div",null,l)}const c=s(n,[["render",t]]);export{F as __pageData,c as default};

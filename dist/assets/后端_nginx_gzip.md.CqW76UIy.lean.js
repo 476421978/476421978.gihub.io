@@ -1,0 +1,1 @@
+import{bS as a,w as n,aG as s,I as e}from"./chunks/framework.CqaskQ-N.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"后端/nginx/gzip.md","filePath":"后端/nginx/gzip.md"}'),p={name:"后端/nginx/gzip.md"},t=e("",4),i=[t];function o(c,l,r,d,g,h){return s(),n("div",null,i)}const x=a(p,[["render",o]]);export{u as __pageData,x as default};

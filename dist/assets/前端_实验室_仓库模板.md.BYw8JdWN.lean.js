@@ -1,0 +1,1 @@
+import{bS as e,w as t,aG as a,I as r}from"./chunks/framework.CqaskQ-N.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"前端/实验室/仓库模板.md","filePath":"前端/实验室/仓库模板.md"}'),i={name:"前端/实验室/仓库模板.md"},l=r("",11),o=[l];function m(h,n,s,c,p,u){return a(),t("div",null,o)}const d=e(i,[["render",m]]);export{_ as __pageData,d as default};

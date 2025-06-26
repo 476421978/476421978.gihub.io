@@ -19,7 +19,7 @@ export default defineConfig({
   title: 'HLG随笔',
   lang: 'zh-CN',
   description: '包含HTML、CSS、JavaScript、Vue、React、TypeScript、Node.js...',
-  // outDir: '../dist',
+  outDir: '../dist',
   head: [
     // 在 Chrome 85 版本中，为了保护用户的隐私，默认的 Referrer Policy 则变成了 strict-origin-when-cross-origin
     // 所以必须加入此部分代码，否则文章统计访问量的数据则不正确
