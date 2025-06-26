@@ -1,0 +1,1 @@
+import{bS as s,w as i,aG as a,I as n}from"./chunks/framework.CqaskQ-N.js";const F=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ES6/工具函数/浏览器.md","filePath":"ES6/工具函数/浏览器.md"}'),h={name:"ES6/工具函数/浏览器.md"},l=n("",15),k=[l];function t(p,e,E,r,d,g){return a(),i("div",null,k)}const c=s(h,[["render",t]]);export{F as __pageData,c as default};

@@ -1,0 +1,1 @@
+import{bS as s,w as i,aG as a,I as n}from"./chunks/framework.CqaskQ-N.js";const y=JSON.parse('{"title":"JavaScript ES6 模块化","description":"","frontmatter":{},"headers":[],"relativePath":"ES6/模块化.md","filePath":"ES6/模块化.md"}'),h={name:"ES6/模块化.md"},t=n("",15),p=[t];function l(k,e,r,d,o,E){return a(),i("div",null,p)}const F=s(h,[["render",l]]);export{y as __pageData,F as default};

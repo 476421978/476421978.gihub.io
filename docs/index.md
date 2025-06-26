@@ -1,25 +1,45 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+class: home
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  # name: 全栈
+  image:
+    src: /logo.jpg
+  text: web前端
+  tagline: 包含HTML、CSS、JavaScript、Vue、React、TypeScript、ES6...
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 首页
+      link: /
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
+      text: 更新日志
+      link: /关于/更新日志
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: ✨
+    title: 随笔记录
+    details: 记录工作生活
+  - icon: ❤
+    title: 循序渐进
+    details: 纸上得来终觉浅，绝知此事要躬行。
+  - icon: 🚶‍♂️
+    title: 关于我
+    details: 是个码人
 ---
 
+<style>
+@media (min-width: 960px) {
+  .home .VPHero.has-image .main {
+    max-width: 640px;
+  }
+}
+
+.VPFeatures + .VPFeatures,
+.site_pv ~ .site_pv {
+  display: none;
+}
+
+.site_pv{
+  text-align: center;
+  padding-top: 5em;
+}
+</style>

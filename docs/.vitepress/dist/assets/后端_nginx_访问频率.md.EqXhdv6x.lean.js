@@ -1,0 +1,1 @@
+import{bS as n,w as s,aG as a,I as p}from"./chunks/framework.CqaskQ-N.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"后端/nginx/访问频率.md","filePath":"后端/nginx/访问频率.md"}'),e={name:"后端/nginx/访问频率.md"},l=p("",10),i=[l];function t(c,o,r,d,_,h){return a(),s("div",null,i)}const g=n(e,[["render",t]]);export{u as __pageData,g as default};

@@ -1,0 +1,1 @@
+import{bS as s,w as i,aG as a,I as n}from"./chunks/framework.CqaskQ-N.js";const c=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"前端/小程序/原生小程序.md","filePath":"前端/小程序/原生小程序.md"}'),t={name:"前端/小程序/原生小程序.md"},h=n("",19),l=[h];function k(p,e,E,r,d,g){return a(),i("div",null,l)}const o=s(t,[["render",k]]);export{c as __pageData,o as default};

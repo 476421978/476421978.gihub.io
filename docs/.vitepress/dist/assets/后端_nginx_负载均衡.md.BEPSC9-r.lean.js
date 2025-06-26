@@ -1,0 +1,1 @@
+import{bS as s,w as n,aG as a,I as p}from"./chunks/framework.CqaskQ-N.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"后端/nginx/负载均衡.md","filePath":"后端/nginx/负载均衡.md"}'),e={name:"后端/nginx/负载均衡.md"},l=p("",6),t=[l];function i(c,r,o,_,d,h){return a(),n("div",null,t)}const g=s(e,[["render",i]]);export{u as __pageData,g as default};

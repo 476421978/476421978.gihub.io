@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "ES2015"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false, // 是否检查未使用的局部变量。
+    "noUnusedParameters": false, // 是否检查未使用的参数。
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["element-plus/global", "vite/client"], // Volar 支持
+    "allowSyntheticDefaultImports": true, // 解决mammoth导入问题
+    "allowJs": true // 避免script setup报错
+  },
+  "exclude": [
+    // 排除掉哪些类库
+    "node_modules",
+    "dist/**"
+  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "auto-imports.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

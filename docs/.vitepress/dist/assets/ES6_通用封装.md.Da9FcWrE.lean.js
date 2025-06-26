@@ -1,0 +1,1 @@
+import{bS as s,w as i,aG as a,I as n}from"./chunks/framework.CqaskQ-N.js";const F=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ES6/通用封装.md","filePath":"ES6/通用封装.md"}'),h={name:"ES6/通用封装.md"},k=n("",22),l=[k];function p(t,e,E,r,d,g){return a(),i("div",null,l)}const c=s(h,[["render",p]]);export{F as __pageData,c as default};

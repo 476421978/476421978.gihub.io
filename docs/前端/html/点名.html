@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>抽奖</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/vant@2.12/lib/index.css" />
+    <!-- 引入 Vue 和 Vant 的 JS 文件 -->
+    <script src="https://unpkg.com/vue@2.6/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vant@2.12/lib/vant.min.js"></script>
+
+    <style>
+      #stop {
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-size: 24px;
+      }
+      #content {
+        height: 400px;
+        width: 100%;
+      }
+
+      #record {
+        font-size: 34px;
+      }
+      #m {
+        margin-top: 20px;
+        font-size: 34px;
+        color: skyblue;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="content">
+        <van-row>
+          <van-col span="24">
+            <van-cell title="类型" is-link @click="showType = true" :value="typeName" />
+          </van-col>
+        </van-row>
+        <van-row>
+          <van-col span="24">
+            <van-collapse v-model="activeNames">
+              <van-collapse-item title="参与人员" name="1">
+                <span v-for="(item, index) in getList" :style="{ color: randomColor(index) }"> {{item}}</span>
+              </van-collapse-item>
+            </van-collapse>
+          </van-col>
+        </van-row>
+
+        <van-divider>幸运儿</van-divider>
+        <div id="m" :title="currentIndex">{{ currentName }}</div>
+
+        <van-button id="stop" type="info" @click="stop">{{ buttonText }}</van-button>
+        <van-action-sheet v-model="showType" :actions="actions" @select="onSelect" cancel-text="取消" close-on-click-action />
+      </div>
+    </div>
+
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          activeNames: ["1"],
+          typeName: "回顾会议",
+          showType: false,
+          actions: [{ name: "回顾会议" }, { name: "迭代计划" }],
+          currentList: [],
+          list_1: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+          ],
+          list_2: [
+            "伟",
+            "妃",
+            "根",
+            "沛",
+            "东",
+            "龙",
+            "妃",
+            "辉",
+            "隆",
+            "杰",
+            "军",
+            "强",
+            "琪",
+            "肖",
+          ],
+          currentIndex: 0,
+          currentName: "",
+          buttonText: "开始/停止",
+          ct: true,
+          speed: 10,
+        },
+        mounted() {
+          // this.f()
+        },
+        computed: {
+          getList() {
+            return this.shuffleArray(this.typeName == "回顾会议" ? this.list_1 : this.list_2)
+          },
+          randomColor() {
+            return (i) => {
+              if (this.currentIndex == i) return `skyblue`
+              return ""
+            }
+          },
+        },
+        methods: {
+          shuffleArray(arr) {
+            const copy = [...arr]
+            for (let i = copy.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1))
+              ;[copy[i], copy[j]] = [copy[j], copy[i]]
+            }
+            return copy
+          },
+          onSelect(item) {
+            this.showType = false
+            this.typeName = item.name
+            vant.Toast(item.name)
+
+            this.currentName = ""
+            this.currentIndex = 0
+          },
+          f() {
+            this.currentList = JSON.parse(JSON.stringify(this.getList))
+            let min = 0
+            let max = this.currentList.length
+            var k = Math.floor(Math.random() * max)
+            this.currentName = this.currentList[k]
+            this.currentIndex = k
+          },
+          stop() {
+            if (this.ct) {
+              clearInterval(this.n)
+              this.buttonText = "开始"
+            } else {
+              this.n = setInterval(this.f, this.speed)
+              this.buttonText = "停止"
+            }
+            this.ct = !this.ct
+          },
+        },
+      })
+
+      Vue.use(vant)
+      // 调用函数组件，弹出一个 Toast
+      // vant.Toast("提示")
+      // 通过 CDN 引入时不会自动注册 Lazyload 组件
+      // 可以通过下面的方式手动注册
+      Vue.use(vant.Lazyload)
+    </script>
+  </body>
+</html>
